@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LandingPage</string>
+
+    <string name="skip_intro">Skip</string>
+    <string name="next_intro">Next</string>
+    <string name="title_intro">Title Intro</string>
+    <string name="title_intro_desc">Title Intro Desc</string>
+</resources>
