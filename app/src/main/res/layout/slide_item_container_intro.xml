@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -9,7 +9,10 @@
         android:id="@+id/img_slide_intro"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:contentDescription="@string/app_name"/>
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/tv_intro_title"
@@ -21,7 +24,10 @@
         android:fontFamily="@font/gilroy_bold"
         android:lineSpacingExtra="4sp"
         android:translationY="1.78sp"
-        android:gravity="center_horizontal|bottom"/>
+        android:gravity="center_horizontal|bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_slide_intro"/>
 
     <TextView
         android:id="@+id/tv_intro_desc"
@@ -34,6 +40,9 @@
         android:fontFamily="@font/gilroy_bold"
         android:lineSpacingExtra="4sp"
         android:translationY="-2.21sp"
-        android:gravity="center_horizontal|top"/>
+        android:gravity="center_horizontal|top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_intro_title"/>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
